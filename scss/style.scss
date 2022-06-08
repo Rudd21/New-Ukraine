@@ -1,0 +1,181 @@
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        .container {
+            margin: 0 auto;
+        }
+        
+        .nitroduce {
+            display: grid;
+            grid-template-columns: 1fr 600px;
+        }
+        
+        .text-introduce {
+            padding: 10px;
+            box-shadow: inset 5em 2em gold;
+            h1 {
+                margin-bottom: 5px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+        
+        .foto-banner {
+            width: 600px;
+        }
+        
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: rgb(37, 37, 37);
+            margin-top: 20px;
+        }
+        
+        h2 {
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        
+        .history-block01 {
+            display: grid;
+            grid-template-columns: 500px 700px;
+            column-gap: 10px;
+            margin-bottom: 40px;
+        }
+        
+        .history-block02 {
+            display: grid;
+            grid-template-columns: 700px 500px;
+            column-gap: 10px;
+            margin-bottom: 40px;
+        }
+        
+        .history-text p {
+            line-height: 25px;
+        }
+        
+        .read_more,
+        .intervu {
+            display: block;
+            width: 200px;
+            height: 40px;
+            background-color: gold;
+            text-align: center;
+            padding-top: 10px;
+            color: white;
+            font-weight: 500px;
+            text-decoration: none;
+        }
+        
+        .intervu {
+            margin-top: 10px;
+        }
+        
+        .constructor-content {
+            display: grid;
+            grid-template-columns: 450px 1fr;
+            line-height: 25px;
+            column-gap: 10px;
+        }
+        
+        .read_more:hover {
+            background-color: rgb(214, 165, 5);
+            transition: 0.3s;
+        }
+        
+        .constructor h2 {
+            border-bottom: 5px solid red;
+            text-align: start;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+        
+        .main-foto {
+            padding-top: 20px;
+        }
+        
+        span {
+            font-weight: bold;
+        }
+        
+        .facts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            row-gap: 20px;
+            column-gap: 10px;
+            img {
+                background: linear-gradient(blue, yellow);
+                border-radius: 10px;
+                padding: 10px;
+                align-self: center;
+            }
+        }
+        
+        .fact {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            align-self: center;
+        }
+        
+        .videos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 10px;
+        }
+        
+        table {
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+        
+        @media (min-width: 600px) and (min-height: 1023px) {
+            .container {
+                min-width: 100%;
+            }
+            .history-block01,
+            .history-block02 {
+                grid-template-columns: 1fr;
+                img {
+                    margin: 0 auto;
+                }
+            }
+            .history-text {
+                grid-row: 2/3;
+            }
+            .nitroduce {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .foto-banner {
+                width: 100%;
+            }
+            .constructor-content {
+                grid-template-columns: 1fr;
+                img {
+                    margin: 0 auto;
+                }
+                .main-foto {
+                    width: 768px;
+                }
+                .read_more,
+                .intervu {
+                    margin: 0 auto;
+                }
+                table {
+                    width: 768px;
+                }
+                .videos {
+                    width: 768px;
+                }
+            }
+        }
